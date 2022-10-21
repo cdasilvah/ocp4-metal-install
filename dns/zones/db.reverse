@@ -1,5 +1,5 @@
 $TTL    604800
-@       IN      SOA     gsrhocw-006.ocp.lan. contact.ocp.lan (
+@       IN      SOA     gsrhocw-006.ocp.gsmart.cl. contact.ocp.gsmart.cl (
                   1     ; Serial
              604800     ; Refresh
               86400     ; Retry
@@ -7,17 +7,17 @@ $TTL    604800
              604800     ; Minimum
 )
 
-  IN      NS      ocp-svc.ocp.lan.
+  IN      NS      gsrhocw-006.gsmart.cl.
 
-1      IN    PTR    ocp-svc.ocp.lan.
-1      IN    PTR    api.lab.ocp.lan.
-1      IN    PTR    api-int.lab.ocp.lan.
+1      IN    PTR    gsrhocw-006.ocp.gsmart.cl.
+1      IN    PTR    api.lab.ocp.gsmart.cl.
+1      IN    PTR    api-int.lab.ocp.gsmart.cl.
 ;
-200    IN    PTR    ocp-bootstrap.lab.ocp.lan.
+200    IN    PTR    gsrhocbootstrap.lab.ocp.gsmart.cl.
 ;
-201    IN    PTR    ocp-cp-1.lab.ocp.lan.
-202    IN    PTR    ocp-cp-2.lab.ocp.lan.
-203    IN    PTR    ocp-cp-3.lab.ocp.lan.
+201    IN    PTR    gsocpcp-001.lab.ocp.gsmart.cl.
+202    IN    PTR    gsocpcp-002.lab.ocp.gsmart.cl.
+203    IN    PTR    gsocpcp-003.lab.ocp.gsmart.cl.
 ;
-211    IN    PTR    ocp-w-1.lab.ocp.lan.
-212    IN    PTR    ocp-w-2.lab.ocp.lan.
+211    IN    PTR    gsrhocw-004.lab.ocp.gsmart.cl.
+212    IN    PTR    gsrhocw-005.lab.ocp.gsmart.cl.
