@@ -6,7 +6,7 @@ $TTL    604800
             2419200     ; Expire
              604800     ; Minimum
 )
-        IN      NS      ocp-svc
+        IN      NS      gsrhocw-006
 
 gsrhocw-006.gsmart.cl.          IN      A       192.168.1.1
 
@@ -19,23 +19,23 @@ gsocpcp-002.lab.ocp.gsmart.cl.         IN      A      192.168.1.202
 gsocpcp-003.lab.ocp.gsmart.cl.         IN      A      192.168.1.203
 
 ; Worker Nodes
-ocp-w-1.lab.ocp.lan.        IN      A      192.168.1.211
-ocp-w-2.lab.ocp.lan.        IN      A      192.168.1.212
+gsrhocw-004.lab.ocp.gsmart.cl.        IN      A      192.168.1.211
+gsrhocw-005.lab.ocp.gsmart.cl.        IN      A      192.168.1.212
 
 ; OpenShift Internal - Load balancer
-api.lab.ocp.lan.        IN    A    192.168.22.1
-api-int.lab.ocp.lan.    IN    A    192.168.22.1
-*.apps.lab.ocp.lan.     IN    A    192.168.22.1
+api.lab.ocp.gsmart.cl.        IN    A    192.168.1.1
+api-int.lab.ocp.gsmart.cl.    IN    A    192.168.1.1
+*.apps.lab.ocp.gsmart.cl.     IN    A    192.168.1.1
 
 ; ETCD Cluster
-etcd-0.lab.ocp.lan.    IN    A     192.168.22.201
-etcd-1.lab.ocp.lan.    IN    A     192.168.22.202
-etcd-2.lab.ocp.lan.    IN    A     192.168.22.203
+etcd-0.lab.ocp.gsmart.cl.    IN    A     192.168.1.201
+etcd-1.lab.ocp.gsmart.cl.    IN    A     192.168.1.202
+etcd-2.lab.ocp.gsmart.cl.    IN    A     192.168.1.203
 
 ; OpenShift Internal SRV records (cluster name = lab)
-_etcd-server-ssl._tcp.lab.ocp.lan.    86400     IN    SRV     0    10    2380    etcd-0.lab
-_etcd-server-ssl._tcp.lab.ocp.lan.    86400     IN    SRV     0    10    2380    etcd-1.lab
-_etcd-server-ssl._tcp.lab.ocp.lan.    86400     IN    SRV     0    10    2380    etcd-2.lab
+_etcd-server-ssl._tcp.lab.ocp.gsmart.cl.    86400     IN    SRV     0    10    2380    etcd-0.lab
+_etcd-server-ssl._tcp.lab.ocp.gsmart.cl.    86400     IN    SRV     0    10    2380    etcd-1.lab
+_etcd-server-ssl._tcp.lab.ocp.gsmart.cl.    86400     IN    SRV     0    10    2380    etcd-2.lab
 
-oauth-openshift.apps.lab.ocp.lan.     IN     A     192.168.22.1
-console-openshift-console.apps.lab.ocp.lan.     IN     A     192.168.22.1
+oauth-openshift.apps.lab.ocp.gsmart.cl.     IN     A     192.168.1.1
+console-openshift-console.apps.lab.ocp.gsmart.cl.     IN     A     192.168.1.1
