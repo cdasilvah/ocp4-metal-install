@@ -1,5 +1,5 @@
 $TTL    604800
-@       IN      SOA     ocp-svc.ocp.lan. contact.ocp.lan (
+@       IN      SOA     gsrhocw-006.gsmart.cl. contact.gsmart.cl (
                   1     ; Serial
              604800     ; Refresh
               86400     ; Retry
@@ -8,19 +8,19 @@ $TTL    604800
 )
         IN      NS      ocp-svc
 
-ocp-svc.ocp.lan.          IN      A       192.168.22.1
+gsrhocw-006.gsmart.cl.          IN      A       192.168.1.1
 
 ; Temp Bootstrap Node
-ocp-bootstrap.lab.ocp.lan.        IN      A      192.168.22.200
+gsrhocbootstrap.lab.gsmart.cl.        IN      A      192.168.1.200
 
 ; Control Plane Nodes
-ocp-cp-1.lab.ocp.lan.         IN      A      192.168.22.201
-ocp-cp-2.lab.ocp.lan.         IN      A      192.168.22.202
-ocp-cp-3.lab.ocp.lan.         IN      A      192.168.22.203
+gsocpcp-001.lab.ocp.gsmart.cl.         IN      A      192.168.1.201
+gsocpcp-002.lab.ocp.gsmart.cl.         IN      A      192.168.1.202
+gsocpcp-003.lab.ocp.gsmart.cl.         IN      A      192.168.1.203
 
 ; Worker Nodes
-ocp-w-1.lab.ocp.lan.        IN      A      192.168.22.211
-ocp-w-2.lab.ocp.lan.        IN      A      192.168.22.212
+ocp-w-1.lab.ocp.lan.        IN      A      192.168.1.211
+ocp-w-2.lab.ocp.lan.        IN      A      192.168.1.212
 
 ; OpenShift Internal - Load balancer
 api.lab.ocp.lan.        IN    A    192.168.22.1
