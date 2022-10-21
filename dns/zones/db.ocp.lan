@@ -1,5 +1,5 @@
 $TTL    604800
-@       IN      SOA     gsrhocw-006.gsmart.cl. contact.gsmart.cl (
+@       IN      SOA     gsrhocw-006.ocp.gsmart.cl. contact.ocp.gsmart.cl (
                   1     ; Serial
              604800     ; Refresh
               86400     ; Retry
@@ -8,10 +8,10 @@ $TTL    604800
 )
         IN      NS      gsrhocw-006
 
-gsrhocw-006.gsmart.cl.          IN      A       192.168.1.1
+gsrhocw-006.ocp.gsmart.cl.          IN      A       192.168.1.1
 
 ; Temp Bootstrap Node
-gsrhocbootstrap.lab.gsmart.cl.        IN      A      192.168.1.200
+gsrhocbootstrap.lab.ocp.gsmart.cl.        IN      A      192.168.1.200
 
 ; Control Plane Nodes
 gsocpcp-001.lab.ocp.gsmart.cl.         IN      A      192.168.1.201
